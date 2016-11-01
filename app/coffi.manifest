@@ -1,0 +1,20 @@
+CACHE MANIFEST
+# v1.01 28.10.2016
+# css
+css/phonon.css
+css/coffi.css
+css/ionicons.css
+
+# js
+js/coffi.js
+js/phonon.js
+
+
+# img
+icon.png
+
+# fonts
+fonts/ionicons.woff?v=2.0.0
+
+NETWORK:
+*

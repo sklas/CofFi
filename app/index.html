@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html manifest="coffi.manifest">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+        <link rel="stylesheet" href="css/phonon.css" />
+        <link rel="stylesheet" href="css/coffi.css" />
+        <link rel="stylesheet" href="css/ionicons.css" />
+        <link rel="manifest" href="manifest.json">
+        <title>App</title>
+    </head>
+    <body>
+
+
+
+
+        <!-- Panel tags go here need -->
+
+        <!-- Side Panel tags go here -->
+
+        <!-- Notification tags go here -->
+
+        <!-- Dialog tags go here -->
+
+
+        <!-- the home page is the default one. This page does not require to call its content because we define on its tag.-->
+
+        <home data-page="true">
+        <header class="header-bar">
+            <div class="center sbrown">
+                <h1 class="title"><span class="cm-status"><i class="icon ion-android-sync icon-spin status-icon"></i> Query status</span></h1>
+            </div>
+        </header>
+            <nav class="tabs sbrown">
+              <div class="tab-indicator"></div>
+                  <div class="tab-items">
+                    <a class="tab-item"><i class="icon big-icon ion-coffee "></i></a>
+                    <a class="tab-item"> <i class="icon big-icon ion-information-circled"></i> </a>
+                    <a class="tab-item"><i class="icon big-icon ion-android-settings"></i> </a>
+                  </div>
+            </nav>
+
+            <div class="content" data-tab-contents="true" data-disable-swipe="false" data-tab-default="1">
+
+                <!-- HOME page -->
+                <div class="tab-content">
+                    <div class="row text-center">
+                        <div class="tablet-5 phone-5 column large-5 padded-full" >
+                            <button class="btn fit-parent cmonecup sbrown" query="onecup"><br><br><i class="icon big-icon ion-coffee cmonecup" query="onecup"></i><br><br><br></button>
+                        </div>
+
+                        <div class="tablet-5 phone-5 column large-5 padded-top padded-right padded-bottom" >
+                            <button class="btn fit-parent sbrown sbrown cmon" query="on"><br><br><i class="icon big-icon ion-power cmon" query="on" style="color: green;"></i> <br><br><br></button>
+                        </div>
+                    </div>
+
+                    <div class="padded-bottom"></div>
+
+                    <div class="row text-center">
+                        <div class="tablet-5 phone-5 column large-5 padded-full" >
+                            <button class="btn fit-parent cmtwocups sbrown" query="twocups"><br><br><i class="icon big-icon ion-coffee cmtwocups" query="twocups"></i>    <i class="icon big-icon ion-coffee cmtwocups" query="twocups"></i><br><br><br></button>
+                        </div>
+
+                        <div class="tablet-5 phone-5 column large-5 padded-top padded-right padded-bottom">
+                            <button class="btn fit-parent sbrown cmoff" query="off"><br><br><i class="icon big-icon ion-power cmoff warn-icon" query="off" style="color: red;"></i><br><br><br></button>
+                        </div>
+                    </div>
+
+                    <div class="padded-bottom"></div>
+
+                    <div class="row text-center">
+                        <div class="tablet-5 phone-5 column large-5 padded-full" style="background-color:#ccc;" >
+                            <button class="btn fit-parent sbrown cmflush" query="flush"><br><br><i class="icon big-icon ion-waterdrop cmflush" query="flush"></i><br><br><br></button>
+                        </div>
+
+                        <div class="tablet-5 phone-5 column large-5 padded-top padded-right padded-bottom"style="background-color:#ccc;" >
+                            <button class="btn fit-parent sbrown cmalarm" query="alarm"><br><br><i class="icon big-icon ion-clock cmalarm" query="alarm" ></i><br><br><br></button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <!-- INFO page -->
+                <div class="tab-content">
+                    <div class="row text-center">
+                        <div class="tablet-2 phone-2 column large-2 column " >
+                            <!-- <br> -->
+                            <span class="cm-update-stats-icon">
+                             <i class="icon ion-android-sync status-icon cm-update-stats" query="update"></i>
+                             </span>
+                        </div>
+                        <div class="tablet-8 phone-8 column large-8 padded-top padded-bottom" >
+                            <div class="progress active cm-trester-progress"></div>
+                        </div>
+                        <div class="tablet-8 phone-8 column large-8 column" >
+                               <br>
+                        </div>
+                    </div>
+                    <ul class="list">
+                        <li >
+                            <i class="pull-right icon ion-android-arrow-dropdown-circle "></i>
+                            <a href="#today" class="padded-list"><strong>Today</strong>
+                                <span class="pull-right cm-today"></span>
+                            </a>
+                            <div class="accordion-content sbrown">
+
+                                <ul class="list">
+                                    <span class="cm-single-today">
+                                    </span>
+                                    <span class="cm-double-today">
+                                    </span>
+                                    <span class="cm-strong-today">
+                                    </span>
+                                    <span class="cm-xstrong-today">
+                                    </span>
+                                    <span class="cm-flush-today">
+                                    </span>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="pull-right icon ion-android-arrow-dropdown-circle"></i>
+                            <a href="#week" class="padded-list" ><strong>Week</strong>
+                                <span class="pull-right cm-week"></span>
+                            </a>
+                            <div class="accordion-content sbrown">
+                                <ul class="list">
+                                    <span class="cm-single-week">
+                                    </span>
+                                    <span class="cm-double-week">
+                                    </span>
+                                    <span class="cm-strong-week">
+                                    </span>
+                                    <span class="cm-xstrong-week">
+                                    </span>
+                                    <span class="cm-flush-week">
+                                    </span>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="pull-right icon ion-android-arrow-dropdown-circle"></i>
+                            <a href="#total" class="padded-list"><strong>Total</strong>
+                                <span class="pull-right cm-total"></span>
+                            </a>
+                            <div class="accordion-content sbrown">
+                                <ul class="list">
+                                    <span class="cm-single-total">
+                                    </span>
+                                    <span class="cm-double-total">
+                                    </span>
+                                    <span class="cm-strong-total">
+                                    </span>
+                                    <span class="cm-xstrong-total">
+                                    </span>
+                                    <span class="cm-flush-total">
+                                    </span>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="padded-full">
+                    <!-- <h4>Coffeemakers</h4> -->
+
+                    <ul class="list">
+                        <!-- <li class="divider"> -->
+                        <!--     Coffeemakers -->
+                        <!--  </li> -->
+                        <span class="cm-list">
+                            <!-- <span class="cm&#45;list&#45;delete"></span> -->
+                            <!-- <strong>No coffeemakers right now! Add one!</strong> -->
+                            <!-- <br> -->
+                            <!-- <br> -->
+                            <!-- <br> -->
+                        </span>
+                        </ul>
+
+
+
+                    <form id="ipForm">
+                        <input class="with-label" type="text" id="name" placeholder="Name">
+                        <input type="url" id="ip" value="http://" >
+                        <div class="full-padded">
+                        <button class="btn fit-parent primary sbrown">Add coffeemaker</button>
+                        </div>
+                    </div>
+                    </form>
+                                   
+                </div>
+            </div>
+        </home>
+        </div>
+
+        <!-- scripts -->
+        <script src="js/phonon.js"></script>
+
+        <!-- our app config -->
+        <script src="js/coffi.js"></script>
+    </body>
+</html>
+        
+
