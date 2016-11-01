@@ -20,9 +20,9 @@ Icons: [Ionicons] (https://github.com/driftyco/ionicons)
 * Read Eeprom 
 * OTA update
 
-<img src="img/main.png" width="64">
-<img src="img/stats.png" width="64">
-<img src="img/settings.png" width="64">
+<img src="img/main.png" width="150">
+<img src="img/stats.png" width="150">
+<img src="img/settings.png" width="150">
 
 
 TODO: 
